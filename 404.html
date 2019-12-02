@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>SysSea URL Redirect</title>
+  <script type="text/javascript">
+    var domainName = document.domain;
+    var pathName = window.location.pathname;
+    var requestUrl = domainName + pathName;
+    if (requestUrl == "url.syssea.com/cloud")
+      this.location = "https://cloud.189.cn/t/yY3y22UrYbYj";
+    else if (requestUrl == "url.syssea.com/ftp")
+      this.location = "ftp://14.29.213.143:8021";
+    else if (requestUrl == "url.syssea.com/hhj")
+      this.location = "http://14.29.213.143:8015";
+  </script>
+</head>
+
+<body>
+  <h1>Safe Redirection ...</h1>
+  If you are not redirected automatically, follow the Click to link<br />
+  <h1>URL List</h1>
+  <ul>
+    <li>
+      <a href='https://cloud.189.cn/t/yY3y22UrYbYj'>Cloud Disk</a>
+    </li>
+    <li>
+      <a href='ftp://14.29.213.143:8021'>SysSea FTP</a>
+    </li>
+  </ul>
+</body>
+
+</html>
